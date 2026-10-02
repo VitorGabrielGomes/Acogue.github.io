@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Funcionários</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho-pequeno">
+        <h1>Açougue Bem Passado</h1>
+        <p>Cadastro de Funcionários</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cad_clientes.html">Clientes</a>
+        <a href="cad_funcionarios.html">Funcionários</a>
+        <a href="cad_produtos.html">Produtos</a>
+    </nav>
+
+    <!-- Formulário -->
+    <main>
+
+        <div class="formulario">
+
+            <h2>Cadastro de Funcionário</h2>
+
+            <form id="formFuncionario">
+
+                <label for="nomeFuncionario">Nome:</label>
+                <input type="text"
+                       id="nomeFuncionario"
+                       name="nomeFuncionario"
+                       placeholder="Digite o nome"
+                       required>
+
+                <label for="cpfFuncionario">CPF:</label>
+                <input type="text"
+                       id="cpfFuncionario"
+                       name="cpfFuncionario"
+                       placeholder="Digite o CPF"
+                       required>
+
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" name="cargo" required>
+                    <option value="">Selecione</option>
+                    <option value="Caixa">Caixa</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Repositor">Repositor</option>
+                    <option value="Açougueiro">Açougueiro</option>
+                    <option value="Estoquista">Estoquista</option>
+                </select>
+
+                <label for="telefoneFuncionario">Telefone:</label>
+                <input type="tel"
+                       id="telefoneFuncionario"
+                       name="telefoneFuncionario"
+                       placeholder="Digite o telefone">
+
+                <label for="salario">Salário:</label>
+                <input type="number"
+                       id="salario"
+                       name="salario"
+                       step="0.01"
+                       placeholder="Digite o salário">
+
+                <button type="submit">Cadastrar</button>
+
+                <button type="reset" class="botao-limpar">
+                    Limpar
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Açougue Bem Passado</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
